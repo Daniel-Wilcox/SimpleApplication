@@ -27,7 +27,7 @@ class App(tk.Tk):
         super().__init__()
 
         # Window properties
-        self.title("Application Launcher")
+        self.title("Simple Application")
         self.geometry("600x200")
         self.eval("tk::PlaceWindow . center")
         self.focus_force()
