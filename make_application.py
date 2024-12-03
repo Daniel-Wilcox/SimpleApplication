@@ -7,7 +7,8 @@ import PyInstaller.__main__
 
 
 DEFAULT_CONFIG = {
-    "version": 1,
+    "version": 2,
+    "app_file": "app.py",
     "app_path": "dist/app.app",
     "github_url": f"https://github.com/Daniel-Wilcox/SimpleApplication",
 }
@@ -52,7 +53,7 @@ def launch_executable():
     else:
         print(f"Executable not found at {exec_path}")
 
-    return ""
+    return exec_path
 
 
 def main():
@@ -70,8 +71,7 @@ def main():
         print(f"2. {config_data = }")
 
     # Pyinstaller
-    # PyInstaller.__main__.run(["app.py", "--onedir", "--windowed"])
-    # subprocess.call(r"pyinstaller app.py --onedir --windowed")
+    PyInstaller.__main__.run(["app.py", "--onedir", "--windowed", "-y"])
 
     launch_executable()
 
