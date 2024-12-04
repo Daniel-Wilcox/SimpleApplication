@@ -10,6 +10,7 @@ DEFAULT_CONFIG = {
     "version": 2,
     "app_file": "app.py",
     "app_path": "dist/app.app",
+    "app_title": "Simple Application",
     "github_url": f"https://github.com/Daniel-Wilcox/SimpleApplication",
 }
 
